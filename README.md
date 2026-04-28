@@ -9,3 +9,8 @@ If you want to learn more about Quarkus, please visit its website: <https://quar
 ```shell script
 ./mvnw package && java -jar target/quarkus-app/quarkus-run.jar
 ```
+
+To test the `poem-writing` skill, enter the following prompt:
+```
+/poem-writing
+```
