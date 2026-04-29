@@ -7,6 +7,11 @@ import jakarta.enterprise.inject.Produces;
 //import quarkus.langchain4j.skills.Skills;
 //import dev.langchain4j.Experimental.ShellSkills;
 //import dev.langchain4j.skills.Skills;
+import dev.langchain4j.agent.tool.Tool;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.io.IOException;
 //import dev.langchain4j.skills.FileSystemSkillLoader;
 //import java.nio.file.Path;
 //import dev.langchain4j-experimental-skills-shell;
@@ -14,6 +19,27 @@ import jakarta.enterprise.inject.Produces;
 
 //import io.quarkiverse.langchain4j.skills.SkillsSystemMessageProvider;
 //import io.quarkiverse.langchain4j.RegisterAiService;
+
+class ExtraTools {
+
+    @Tool("Get the current time")
+    public String getTime() {
+        return java.time.LocalTime.now().toString();
+    }
+
+    @Tool("Read file by name")
+    public String readFile(String filename) throws IOException {
+        Path baseDir = Paths.get("").toAbsolutePath().normalize();
+        Path userInput = Paths.get(filename);
+        Path resolved = baseDir.resolve(userInput).normalize();
+
+        if (!resolved.startsWith(baseDir)) {
+            throw new SecurityException("Access outside working directory is not allowed.");
+        }
+
+        return Files.readString(resolved);
+    }
+}
 
 @ApplicationScoped
 public class AssistantProducer {
@@ -36,6 +62,7 @@ public class AssistantProducer {
                    //.systemMessageProvider(SkillsSystemMessageProvider.class)
 
         return AiServices.builder(Assistant.class)
+                   .tools(new ExtraTools())
                    .build();
     }
 }
