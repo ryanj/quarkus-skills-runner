@@ -19,3 +19,8 @@ Run the `/hello` skill to test a mult-step workflow:
 ```shell
 /hello
 ```
+
+Conduct a security review using `secdevai` skills (sourced from lola):
+```shell
+/secdevai review
+```
