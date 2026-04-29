@@ -10,6 +10,8 @@ If you want to learn more about Quarkus, please visit its website: <https://quar
 ./mvnw package && java -jar target/quarkus-app/quarkus-run.jar
 ```
 
+## Basic SKILL interactions:
+
 To test the `poem-writing` skill, enter the following prompt:
 ```
 /poem-writing
@@ -20,7 +22,7 @@ Run the `/hello` skill to test a mult-step workflow:
 /hello
 ```
 
-Conduct a security review using `secdevai` skills (sourced from lola):
+Conduct a security review of the codebase using the `secdevai` skills (from lola):
 ```shell
 /secdevai review
 ```
