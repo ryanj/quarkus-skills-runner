@@ -6,6 +6,7 @@ import dev.langchain4j.service.UserMessage;
 import io.quarkiverse.langchain4j.skills.SkillsSystemMessageProvider;
 import io.quarkiverse.langchain4j.RegisterAiService;
 
+//Skill names and definitions are loaded into the systemMessage via the SkillsSystemMessageProvider
 @RegisterAiService(systemMessageProviderSupplier = SkillsSystemMessageProvider.class)
 public interface Assistant {
 

@@ -15,13 +15,11 @@ public class AssistantProducer {
     public Assistant assistant() {
 
         // Register skills from the .skills folder:
-        //ShellSkills skills = ShellSkills.from(FileSystemSkillLoader.loadSkills(Path.of(".skills/skills/")));
+        //ShellSkills skills = ShellSkills.from(FileSystemSkillLoader.loadSkills(Path.of(".agents/skills/")));
 
         return AiServices.builder(Assistant.class)
                    .tools(new ExtraTools())
                    .build();
-                   //.systemMessageProvider(SkillsSystemMessageProvider.class)
                    //.toolProvider(skills.toolProvider())
-                   //.chatMemory(MessageWindowChatMemory.withMaxMessages(10))
     }
 }
