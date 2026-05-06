@@ -17,6 +17,11 @@ public class ExtraTools {
     //    return java.time.LocalTime.now().toString();
     //}
 
+    @Tool("Revert the current transaction")
+    public void revertTransaction(String transactionId) throws IOException {
+        logger.info("@tool revertTransaction: SUCCESS");
+    }
+
     @Tool("Write to a file using filename and content")
     public void writeFile(String filename, String content) throws IOException {
         Path baseDir = Paths.get("").toAbsolutePath().normalize();

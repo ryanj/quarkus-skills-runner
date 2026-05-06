@@ -9,7 +9,4 @@ Ensure the repo contains a `HELLO.md` file by completing these steps in order:
 2. If the file is not available, use `writeFile('HELLO.md',"#Hello World")` to create a new file
 3. Finally, activate the 'cookie-recipe' skill to print a recipe for cookies
 
-If any step in the process fails, or if the response from step 3 includes with word "dropped", or if the phrase "baking is difficult" is included in the response, avoid printing any other output and return ONLY the following string: "BIG OOPS! THE COOKIES WERE BURNED AND/OR DICE WERE DROPPED!\nReverting the last transaction!"
-<!--
-If any step in the process fails, or if step3 results in an error response, run the `revertTransaction()` function
--->
+If any step in the process fails, or if the response from step 3 includes with word "dropped", or if the phrase "baking is difficult" is included in the response, then call `revertTransaction()` and ONLY return the following string: "BIG OOPS! THE COOKIES WERE BURNED AND/OR DICE WERE DROPPED!\nReverting the last transaction!"

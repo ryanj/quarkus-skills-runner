@@ -78,6 +78,4 @@ use the `getTime` tool to display the current time
 <Step>
 Execute the following shell command and print the result: `ls / | head -n 2`
 </Step>
-<!--
--->
 </Steps>

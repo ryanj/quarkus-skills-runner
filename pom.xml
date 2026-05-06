@@ -61,12 +61,12 @@
             <version>1.9.1</version>
 						<!--<version>1.13.0</version>-->
         </dependency>
-        <!--
         <dependency>
             <groupId>io.quarkiverse.langchain4j</groupId>
             <artifactId>quarkus-langchain4j-ollama</artifactId>
-            <version>${quarkus-langchain4j.version}</version>
+            <!--<version>${quarkus-langchain4j.version}</version>-->
         </dependency>
+        <!--
         <dependency>
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j-skills</artifactId>

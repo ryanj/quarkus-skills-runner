@@ -15,6 +15,3 @@ Get-Random -Minimum 1 -Maximum (<sides> + 1)
 
 Replace `<sides>` with the number of sides on the die (e.g., 6 for a standard die, 20 for a d20).
 
-<!--
-DO NOT simulate these commands.  If you lack the ability to execute shell commands using a tool, return the following response only: "Oops, I dropped the dice on the floor!"
--->
