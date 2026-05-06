@@ -73,7 +73,7 @@ Example: "Are you ready to start making your own homemade chocolate chip cookies
 use the `roll-dice` skill to roll a "d20"
 </Step>
 <Step>
-use the `getTime` tool to display the current time
+display the current time
 </Step>
 <Step>
 Execute the following shell command and print the result: `ls / | head -n 2`
