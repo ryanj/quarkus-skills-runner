@@ -186,7 +186,7 @@ npx skills add quarkusio/quarkus-skills --skill quarkus-update -a universal -y
 
 Run the jar in a container sandbox:
 ```
-podman run --userns=keep-id --volume $(pwd):/opt/app/:Z -w /opt/app/ -e OPENAI_API_KEY=${OPENAI_API_KEY} --rm -it eclipse-temurin:21.0.10_7-jre-ubi10-minimal -- java -jar target/quarkus-app/quarkus-run.jar
+mvn package && podman run --userns=keep-id --volume $(pwd):/opt/app/:Z -w /opt/app/ -e OPENAI_API_KEY=${OPENAI_API_KEY} --rm -it eclipse-temurin:21.0.10_7-jre-ubi10-minimal -- java -jar target/quarkus-app/quarkus-run.jar
 ```
 
 Use the `run_shell_command` tool to verify that the process has been sandboxed:
