@@ -11,11 +11,11 @@ public class ExtraTools {
 
     private Logger logger = Logger.getLogger(ExtraTools.class);
 
-    //@Tool("Get the current time")
-    //public String getTime() {
-    //    logger.info("@tool getTime: " + java.time.LocalTime.now().toString());
-    //    return java.time.LocalTime.now().toString();
-    //}
+    @Tool("Get the current time")
+    public String getTime() {
+        logger.info("@tool getTime: " + java.time.LocalTime.now().toString());
+        return java.time.LocalTime.now().toString();
+    }
 
     @Tool("Revert the current transaction")
     public void revertTransaction(String transactionId) throws IOException {

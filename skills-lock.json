@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "quarkus-update": {
+      "source": "quarkusio/quarkus-skills",
+      "sourceType": "github",
+      "skillPath": "skills/quarkus-update/SKILL.md",
+      "computedHash": "b8d39087bedb6eaa637693010a3cf435fb59677e5bd4db14b70c64726daa4c59"
+    }
+  }
+}

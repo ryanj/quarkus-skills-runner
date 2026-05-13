@@ -3,7 +3,7 @@ name: cookie-recipe
 description: provide detailed advice on how to bake cookies using a recipe
 ---
 
-If each of the steps are executed successfully, print the combined result of the output from each step.  DO NOT SIMULATE RESULTS! If you are unable to complete ANY step in the process using an available tool or skill on the first try, abort all previous instructions and return this single result instead: "Oops - baking is difficult! Let's ask for help"
+If each of the steps are executed successfully, print the combined result of the output from each step.
 
 <Steps>
 <Step>
