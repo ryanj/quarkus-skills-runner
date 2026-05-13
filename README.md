@@ -32,4 +32,4 @@ To test the `poem-writing` skill, enter the following command at the prompt:
 /poem-writing
 ```
 
-Additional examples are available in [DEMO.md](https://github.com/ryanj/quarkus-skills-runner/edit/main/DEMO.md)
+Additional examples are available in [DEMO.md](https://github.com/ryanj/quarkus-skills-runner/blob/main/DEMO.md)
