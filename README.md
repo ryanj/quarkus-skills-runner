@@ -32,12 +32,4 @@ To test the `poem-writing` skill, enter the following command at the prompt:
 /poem-writing
 ```
 
-Conduct a security review of the codebase using the `secdevai` skills (from lola):
-```shell
-/secdevai review @ src/main/java/com/example/skillsbot/SkillsBotApp.java
-```
-
-Run the `/hello` skill to test a mult-step workflow:
-```shell
-/hello
-```
+Additional examples are available in [DEMO.md](https://github.com/ryanj/quarkus-skills-runner/edit/main/DEMO.md)
