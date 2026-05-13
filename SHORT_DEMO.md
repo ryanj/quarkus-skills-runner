@@ -127,7 +127,7 @@ Pass a parameter to a skill: "Roll a d12":
 Use the 'roll-dice' skill to roll a d12
 ```
 
-Review the 'init-repo' skill:
+Review the 'init-repo' skill (do not copy/paste):
 ```markdown
 ---
 name: init-repo
